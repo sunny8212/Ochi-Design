@@ -3,7 +3,7 @@ import React from 'react'
 function About() {
   return (
     <div className='w-full p-20 bg-[#CDEA68] rounded-tl-3xl rounded-tr-3xl text-black'>
-      <h1 className='font-["Neue_Montreal"] text-6xl leading-[3vw] text-[3.5vw] tracking-tighter'>Ochi is a strategic presentation agency for forward-thinking businesses that need to raise funds, sell prodducts, explain complex ideas, and hire great people.</h1>
+      <h1 className='font-["Neue_Montreal"] text-6xl leading-[3vw] text-[3.5vw] tracking-tighter'>Ochi is a strategic presentation agency for forward-thinking businesses that need to <span className='underline'>raise funds, sell prodducts, explain complex ideas, and hire great people.</span></h1>
 
       {/* our approach */}
       <div className="w-full flex gap-5 border-t-[1px] mt-20 pt-10 border-[#738146]">
