@@ -1,14 +1,15 @@
+import { motion } from 'framer-motion';
 import React from 'react'
 import { FaLocationArrow } from "react-icons/fa";
 
 function LandingPage() {
   return (
-    <div className='w-full h-screen bg-zinc-900 pt-1 '>
+    <div data-scroll data-scroll-section data-scroll-speed="-.3" className=' w-full h-screen bg-zinc-900 pt-1 '>
       <div className="textstructure mt-52 px-20">
         {["we create", "eye opening", "presentations"].map((item, index) => { return (
           <div key={index} className="masker">
             <div className="w-fit flex items-end overflow-hidden">
-              {index===1 && (<div className='mr-[1vw] rounded-md w-[8vw] h-[5.7vw] relative -top-[1vw]  bg-red-500'></div>)}
+              {index===1 && (<motion.div initial={{width:0}} animate={{width: "9vw"}} transition={{ease: [0.76, 0, 0.24, 1], duration:1}} className='mr-[1vw] rounded-md w-[8vw] h-[5.7vw] relative -top-[1vw]  bg-red-500'></motion.div>)}
             <h1 className="flex items-center h-full uppercase text-[7vw] leading-[7vw] tracking-tighter font-['Founders_Grotesk'] font-medium ">
               {item}
             </h1>
@@ -16,7 +17,7 @@ function LandingPage() {
           </div>
         )})}
       </div>
-      <div className="border-t-2 border-zinc-700 mt-20 flex justify-between items-center py-5 px-10">
+      <div className="border-t-[1px] border-zinc-700 mt-20 flex justify-between items-center py-5 px-10">
         {["For public and private companies", "From the forst pitch to IPO"].map((item, index)=> 
         <p key={index} className="text-md font-light tracking-tight leading-none">{item}</p>
         )}
