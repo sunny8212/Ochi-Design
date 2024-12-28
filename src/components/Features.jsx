@@ -43,7 +43,7 @@ function Featured() {
                     className='cardcontainer relative  w-1/2 h-[75vh]   '>
                 <h1 className='absolute flex overflow-hidden  text-[#CDEA68] right-full translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] text-8xl leading-none tracking-tight '>
                 {"VISE".split('').map((item, index)=>( 
-                    <motion.span 
+                    <motion.span  
                     initial={{y: "100%"}} 
                     animate={cards[1]} 
                     transition={{ease: [0.22,1,0.36,1], delay: index*.06}}
